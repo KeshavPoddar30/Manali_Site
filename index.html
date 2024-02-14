@@ -233,6 +233,41 @@
       </div>
     </section>
 
+    <div class="section__container duration__container">
+      <h2 class="section__header">Plan Your Stay</h2>
+      <div class="form-group">
+        <label for="hotel-select">Select Hotel:</label>
+        <select id="hotel-select" name="hotel-select">
+          <option value="hotel1">Hotel 1</option>
+          <option value="hotel2">Hotel 2</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="check-in">Check-In:</label>
+        <input type="date" id="check-in" name="check-in" placeholder="Select check-in date" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="check-out">Check-Out:</label>
+        <input type="date" id="check-out" name="check-out" placeholder="Select check-out date" required>
+      </div>
+    
+      <div class="form-group">
+        <label for="guests-select">Number of Guests:</label>
+        <select id="guests-select" name="guests-select">
+          <option value="1">1 Adult</option>
+          <option value="2">2 Adults</option>
+          <option value="3">3 Adults</option>
+        </select>
+      </div>
+    
+      <div class="form-group">
+        <label for="total-days">Total Days:</label>
+        <input type="text" id="total-days" name="total-days" readonly>
+      </div>
+    </div>    
+
     <section class="client">
       <div class="section__container client__container">
         <h2 class="section__header">What our client say</h2>
@@ -301,5 +336,7 @@
         Copyright © 2023 Web Design Mastery. All rights reserved.
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.11/flatpickr.min.js" integrity="sha512-fWavsQbEkZyyE0Iiwx2ElW8jj95P3X/mDdUxiLWf4EyuW/AAah+fAbUBcBBIn2pOoGn4Y2+haVPK8VQJ7jw4Iw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./Js/index.js"></script>
   </body>
 </html>
