@@ -237,6 +237,59 @@ z-index: -1;
   color: var(--text-light);
 }
 
+.duration__container{
+  display: flex;
+}
+
+.form-group {
+  flex: 1 1 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group .calendar-container {
+  position: relative;
+}
+
+.form-group .calendar-container input {
+  width: calc(100% - 40px);
+}
+
+.form-group .calendar-container .flatpickr-calendar {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+#total-days{
+  width: 3rem;
+}
+
 .client {
   background-color: var(--extra-light);
 }
